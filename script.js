@@ -41,6 +41,7 @@ function fetchBitcoinFee() {
         })
         .catch(error => {
             console.error('Error:', error);
+            alert('No se pudo cargar la comisión media de Bitcoin. Revisa conexion al internet');
             document.getElementById('bitcoin-fee').textContent = 'No se pudo cargar la comisión media de Bitcoin. Revisa conexion al internet';
         });
 }
@@ -72,7 +73,7 @@ function enlace_2() {
     alert("Esta en un presentacion");
 }
 
-}
+
 function dibujarReloj() {
     console.log('Iniciando dibujarReloj');
     const canvas = document.getElementById('reloj-canvas');
