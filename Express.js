@@ -5,3 +5,8 @@ app.use((req, res, next) => {
     res.set('Expires', '0');
     next();
   });
+  const express = require('express');
+  const compression = require('compression');
+  const app = express();
+  
+  app.use(compression());
