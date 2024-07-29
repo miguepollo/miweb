@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página personal de Miguel</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <script src="script.js?v=1.0.0"></script>
+    <link rel="stylesheet" href="styles.css?v=1.0.0">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="tabs">
+            <button class="tab-button active" onclick="showTab('about-me')">Sobre mí</button>
+            <button class="tab-button" onclick="showTab('my-chickens')">Mi ordenador</button>
+            <button class="tab-button" onclick="showTab('my-chicons')">Mi sistema operativo</button>
+            <button class="tab-button" onclick="showTab('Mi-bateria')">Mi-bateria</button>
+            <button class="tab-button" onclick="showTab('Informacion Bateria')">Info Batt</button>
+            <button class="tab-button" onclick="showTab('Consumidores')">Consumidores</button>
+            <button class="tab-button" onclick="showTab('bitcoin')">Bitcoin</button>
+            <button class="tab-button" onclick="showTab('BASH')">BASH Basicos</button>
+            <button class="tab-button" onclick="showTab('descargas')">Descargas</button>
+            <button class="tab-button" onclick="showTab('Evolucionaplicacion')">Aplicacion</button>
+            <button class="tab-button" onclick="showTab('fecha-hora-madrid')">Fecha y Hora</button>
+            <button class="tab-button" onclick="showTab('reloj-madrid')">Hora en Madrid</button>
+        </div>
+        <div id="about-me" class="tab-content active">
+            <h2>Sobre mí</h2>
+            <ul>
+                <p>Hola, mi nombre es Miguel. Me gustan los ordenadores y tengo 11 años. Mi hobby es hacer proyectos con Unreal Engine.</p>
+                <p>Llevo interesado en la tecnologia en general desde hace 3-4 años</p>
+                <p>Mis padres al ver que usaba Unreal Engine me compraron un ordenador nuevo</p>
+            </ul>
+        </div>
+        <div id="my-chickens" class="tab-content">
+            <h2>Mi ordenador</h2>
+            <ul>
+                <p>HP-victus con nvidia GeForce RTX 4060 laptop q-max y AMD Ryzen 7 7840HS 16,1 pulgadas de pantalla.Ram 32gb DDR5 5600Mhz</p>
+            </ul>  
+        </div>
+        <div id="my-chicons" class="tab-content">
+            <h2>Mi Sistema operativo</h2>
+            <ul>
+                <p>KUBUNTU 24.04 6.9.11-x64v4-xanmod1 (64 bits)
+            </ul>  
+        </div>
+        <div id="descargas" class="tab-content" >
+            <h2>Descargas</h2>
+            
+            <div class="botones-descarga">
+                <button class="boton-descarga" onclick="enlace_1()">
+                    Descargar Cursor(vscode con AI)
+                </button>
+            </div>
+            <div class="botones-descarga">
+                <button class="boton-descarga" onclick="enlace_2()">
+                    Descargar Prusaslicer(programa rebanado 3d)
+                </button>
+            </div>
+            
+         </div>
+        <div id="Mi-bateria" class="tab-content">
+            <h2>Mi-bateria</h2>
+            <ul>
+                <p>Bateria 99% restante 49 minutos</p>
+            </ul>
+        </div>
+        <div id="Informacion Bateria" class="tab-content">
+            <h2>Info Batt</h2>
+            <ul>   
+                <p>Li-ion 70wh</p>
+                <p>-151.45W</p>
+            </ul>     
+        </div>
+        <div id="Consumidores" class="tab-content">
+            <h2>Consumidores</h2>
+            <ul>
+                <li>Nvidia GeForce rtx 4060 q-max 100.53W</li>
+                <li>AMD Ryzen 7 7840HS 40.98W</li>
+                <li>Pantalla 5.98W</li>
+                <li>Otros perifericos 3.96W</li>
+            </ul>
+        </div>
+        <div id="bitcoin" class="tab-content">
+            <h2>Bitcoin</h2>
+        <ul>
+            <p id="bitcoin-price">Cargando...</p>
+            <p id="bitcoin-fee">Cargando comisión media...</p>
+        </ul>
+        </div>
+        <div id="BASH" class="tab-content">
+            <h2>BASH Basicos</h2>
+            <ul>
+                <li>sudo apt update && sudo apt upgrade(actualizar paquetes)</li>
+                <li>shutdown now(apagar ahora)</li>
+                <li>killall -9 (matar procesor)</li>
+                <li>cd (moverse entre directorios)</li>
+                <li>curl -fsSL (tu_url) (permite descargar archivos de paginas web mediante terminal)</li>
+                <li>rm (borra archivos para borrar recursivamente usar rm-rf)</li>
+                <li>rmdir (borra directorios)</li>
+            </ul>
+        </div>
+        <div id="Evolucionaplicacion" class="tab-content">
+            <h2> Evolucion de la aplicacion</h2>
+            <p id="aaaa"> 25/7/24 Primer arranque con primeras pestañas y pruebas simples</p> 
+            <p id="aaae"> 26/7/24 Añadido Precio bitcoin llamando a un API y cambiado algun tamaño y estilo de letra</p> 
+            <p id="aaai">27/7/24 Añadida primera cosa interactiva: botones de descarga de aplicaciones y un zip tambien añadido estilos y colores de texto nuevos.Tambien añadido la fecha y hora en digital y analogico.</p>
+        </div>
+        <div id="fecha-hora-madrid" class="tab-content">
+            <h2>Fecha y Hora</h2>
+            <p id="madrid-time">Cargando...</p>
+        </div>
+        <div id="reloj-madrid" class="tab-content">
+            <h2>Hora en Madrid</h2>
+            <canvas id="reloj-canvas" width="200" height="200"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

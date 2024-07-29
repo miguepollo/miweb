@@ -1,0 +1,113 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    height: 100%;
+    background: linear-gradient(to right, #c95656, #3434c4);
+}
+
+.tabs {
+    display: flex;
+}
+
+.tab-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.tab-button.active {
+    background-color: rgba(238, 255, 3, 0.829);
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: rgb(29, 199, 14);
+    margin: 12px;
+    border-radius: 10px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.botones-descarga {
+
+    margin: 10px;
+}
+
+.boton-descarga {
+    text-decoration: none;
+    border: 1px;
+    color: rgb(11, 73, 114);
+    border-radius: 2px;
+    font-size: 24px;
+    cursor:pointer
+}
+
+
+h2 {
+    color: #ff0000;
+    font-size: 36px
+}
+
+ul {
+    padding-left: 20px;
+    color: #000000;
+    font-size: 22px;
+}
+#reloj-canvas {
+    display: block;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#contacto {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+#contactForm button {
+    background-color: #87CEEB;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #5CACEE;
+}
