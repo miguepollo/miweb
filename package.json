@@ -14,7 +14,7 @@
     "terser": "^5.31.3"
   },
   "devDependencies": {
-    "browser-sync": "^3.0.2",
+    "browser-sync": "^3.0.3",
     "webpack": "^5.94.0",
     "webpack-dev-server": "^5.0.4"
   },
