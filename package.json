@@ -7,8 +7,8 @@
     "start": "npx http-server"
   },
   "dependencies": {
-    "body-parser": "^1.20.5",
-    "express": "^4.22.2",
+    "body-parser": "^2.3.0",
+    "express": "^5.2.1",
     "http-server": "^14.1.1",
     "nodemailer": "^9.0.1",
     "terser": "^5.31.3"
@@ -16,7 +16,7 @@
   "devDependencies": {
     "browser-sync": "^3.0.3",
     "webpack": "^5.105.2",
-    "webpack-dev-server": "^5.2.5"
+    "webpack-dev-server": "^6.0.0"
   },
   "keywords": [],
   "author": "",
