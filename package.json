@@ -10,7 +10,7 @@
     "body-parser": "^1.20.8",
     "express": "^4.22.3",
     "http-server": "^14.1.1",
-    "nodemailer": "^9.1.1",
+    "nodemailer": "^10.0.9",
     "terser": "^5.31.3"
   },
   "devDependencies": {
